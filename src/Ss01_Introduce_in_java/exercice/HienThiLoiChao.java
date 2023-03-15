@@ -1,4 +1,4 @@
-package Introduce_in_java.exercice;
+package Ss01_Introduce_in_java.exercice;
 
 import java.util.Scanner;
 public class HienThiLoiChao {

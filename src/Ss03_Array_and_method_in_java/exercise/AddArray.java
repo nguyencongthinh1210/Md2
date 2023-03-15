@@ -1,12 +1,11 @@
-package Array_and_method_in_java.exercise;
+package Ss03_Array_and_method_in_java.exercise;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class DeleteInArray {
+public class AddArray {
     public static void main(String[] args) {
         int input=0;
-        int count=0;
         int find;
         Scanner scanner = new Scanner(System.in);
         System.out.println("vui lòng nhập số phần tử của mảng: ");
@@ -17,23 +16,18 @@ public class DeleteInArray {
             newArray[i] = Integer.parseInt(scanner.nextLine());
         }
         System.out.println(Arrays.toString(newArray));
-        System.out.println("mời nhập biến cần tìm :");
+        System.out.println("mời nhập biến cần thêm :");
         find = Integer.parseInt(scanner.nextLine());
-        for (int i=0;i<newArray.length;i++){
-            if (newArray[i]==find){
-                count+=1;
+        int[] newArray2 = new int[newArray.length+1];
+        for (int i=0; i<newArray2.length;i++){
+            if (i==(newArray2.length-1)){
+                newArray2[i] = find;
+            }
+            else {
+                newArray2[i] = newArray[i];
             }
         }
-        int[] newArray2 = new int[newArray.length-count];
-        int count2=0;
-        for (int i=0;i<newArray.length;i++){
-            if (newArray[i]==find){
-                count2+=1;
-                break;
-            }
-            newArray2[i-count2] = newArray[i];
-        }
-        System.out.println("mảng sau khi xóa là: ");
+        System.out.println("mảng sau khi thêm là: ");
         System.out.println(Arrays.toString(newArray2));
     }
 }

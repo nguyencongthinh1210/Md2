@@ -1,4 +1,4 @@
-package Loop_in_java.exercise;
+package Ss02_Loop_in_java.exercise;
 
 public class PrimeLessThan100 {
     public static void main(String[] args) {

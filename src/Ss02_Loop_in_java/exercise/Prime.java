@@ -1,6 +1,4 @@
-package Loop_in_java.exercise;
-
-import java.util.Scanner;
+package Ss02_Loop_in_java.exercise;
 
 public class Prime {
     public static void main(String[] args) {
